@@ -1,0 +1,90 @@
+/* @font-face {
+    font-family: 'Название';
+    src: url("ссылка в проекте");
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap');
+
+:root{
+    --active-color:#222222;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Josefin Sans;
+    /* font-family: Название из @font-face; 
+    можно так*/
+}
+.link{
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px;
+}
+.link:hover{
+    color: blueviolet;
+}
+.link:active{
+    color: var(--active-color);
+}
+.h1{
+    color: var(--active-color);
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+}
+.paragraph{
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 18px;
+    line-height: 30px;
+    color: black;
+}
+.index-h2{
+    color: coral;
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 36px;
+    line-height: 80px;
+}
+.input{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.button{
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.block_1{
+    margin: 10px;
+    padding: 10px;
+}
+.block_2{
+    margin: 15px;
+    padding: 15px;
+}
+.block_3{
+    margin: 20px;
+    padding: 20px;
+}
+
+.card{
+    background-color: #7D7987;
+}
+
+.card-text{
+    color: aliceblue;
+}
+
+.card-title{
+    color: aliceblue;
+}
