@@ -34,9 +34,6 @@ body{
 .content{
     margin-left: calc(100% - 80%);
     margin-right: calc(100% - 80%);
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
 }
 
 .header{
@@ -45,14 +42,13 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo{
-   
-}
-
-.logo__img{
-       
+   display: flex;
+   flex-direction: row;
+   align-items: center;
 }
 
 .logo__grow{
@@ -78,7 +74,11 @@ body{
 .menu{
     width: 533px;
     height: 17px;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
 }
 
 .menu__link__home{
@@ -130,7 +130,6 @@ body{
     font-weight: 400;
     line-height: normal;
     margin-top: 17px;
-    /* margin-right: 56px; */
 }
 
 .main__left__btn{
@@ -171,8 +170,4 @@ body{
     padding-top: 97px;
     display: flex;
     gap: 71px;
-}
-
-.footer__img{
-    
 }
