@@ -9,6 +9,16 @@
 }
 
 @font-face {
+    font-family: "InterBold";
+    src: url(./fonts/Inter/static/Inter-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: "InterNormal";
+    src: url(./fonts/Inter/static/Inter-Thin.ttf);
+}
+
+@font-face {
     font-family: "Gilroy-Medium";
     src: url(./fonts/gilroy-bold-cdnfonts/Gilroy-Medium.ttf);
 }
@@ -32,8 +42,8 @@ body{
 }
 
 .content{
-    margin-left: calc(100% - 80%);
-    margin-right: calc(100% - 80%);
+    width: 1147px;
+    margin: 0 auto;    
 }
 
 .header{
@@ -53,7 +63,7 @@ body{
 
 .logo__grow{
     color: #000;
-    font-family: var(--font_gb);
+    font-family: var(--font_gb);    
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -169,5 +179,210 @@ body{
 .footer{
     padding-top: 97px;
     display: flex;
-    gap: 71px;
+    justify-content: space-between;
+}
+
+.footer__img{
+    height: 50px;
+}
+
+.container_2{
+    padding-top: 100px;
+    background-color: #F0F0F0;
+}
+
+.container_2 .content{
+    width: 1147px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container_2 .left h3{
+    width: 511px;
+    align-self: stretch;
+    color: #000;
+    font-family: var(--font_gb);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    padding-bottom: 20px;
+}
+
+.container_2 .left p{
+    width: 511px;
+    align-self: stretch;
+    color: #888;
+    font-family: var(--font_sb);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    padding-bottom: 32px;
+}
+
+.container_2 .content .right img{
+    width: 643px;
+    height: 507px;
+}
+
+.container_3{
+    background: #FFF;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.block image{
+    width: 70px;
+    height: 70px;
+}
+
+.container_3 .content .block h3{
+    color: #000;
+
+    font-family: var(--font_gb);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 235px;
+}
+
+.container_3 .content .block p{
+    width: 310px;
+    height: 42px;
+
+    color: #666;
+
+    font-family: var(--font_m);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.container_3 .content .block h4{
+    color: #000;
+
+    font-family: var(--font_gb);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.container_3 .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container_3 .block{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 40px 34px;
+}
+
+.shadow{
+    background: #FFF;
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.container_4{
+    width: 1174;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #FAFAFA;
+}
+
+.container_4 .content .head h2{
+    color: #000;
+
+    text-align: center;
+    font-family: var(--font_gb);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.container_4 .content .head p{
+    width: 740px;
+
+    color: #888;
+
+    text-align: center;
+    font-family: var(--font_m);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.container_4 .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.container_4 .content .head{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.container_4 .content .blocks{
+    display: flex;
+    gap: 20px;
+}
+
+.container_4 .content .blocks .block h3{
+    align-self: stretch;
+    color: #000;
+    text-align: center;
+    font-family: var(--font_gb);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 310px;
+}
+
+.container_4 .content .blocks .block p{
+    align-self: stretch;
+    color: #666;
+    text-align: center;
+    font-family: var(--font_m);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 310px;
+    padding-top: 16px;
+}
+
+.container_4 .content .blocks .block{
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    flex: 1 0 0;
+    width: 378px;
+}
+
+.blok_image img{
+    width: 314px;
+    height: 284px;
+    flex-shrink: 0;
+}
+
+.block .block_btn{
+    padding-bottom: 34px;
 }
