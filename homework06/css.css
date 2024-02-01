@@ -22,19 +22,26 @@ a {
     --LatoNormal:"LatoNormal";
 }
 
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
 .header{
     background-color: #222;
     width: 100%;
 }
 
 .menu{
-    padding-left: 231px;
-    padding-right: 240px;
+    /* padding-left: 231px;
+    padding-right: 240px; */
     height: 75px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+    /* max-width: 1140px; */
+}  
+
 
 .left_menu{    
     display: flex;
@@ -55,21 +62,31 @@ a {
 .slider{
     background-color: #F1E4E6;
     width: 100%;
-    height: 764px;
-}
-
-.slider_content{
-    display: flex;
-    align-items: center;
-}
-
-.slider_content .right{
-    padding-left: 64px;
+    height: 50vw;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    gap: 64px;
+    background-image: url("./img/slider_left.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.slider .left{
+    width: 50%;
+}
+
+.slider .left img{
+    width: 100%;
+}
+
+.slider .right{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 16px;
+    align-items: center;
 }
 
 .label h1{
@@ -84,7 +101,7 @@ a {
 .label .bottom{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -108,14 +125,14 @@ a {
 
 .content{
     padding-top: 65px;
-    padding-left: 230px;
+    /* padding-left: 230px; */
     /* padding-right: 240px; */
 }
 
 .woman_man_kids{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
     gap: 30px;
 }
 
@@ -143,10 +160,7 @@ a {
 }
 
 .wmk_size{
-    width: 360px;
-    height: 260px;
-    background-color: rgba(33, 22, 22, 0.70);;
-    background-blend-mode: overlay;
+    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -155,34 +169,16 @@ a {
     align-items: center;
 }
 
-.woman{
-    background-image: url(./img/woman.svg);    
-}
-
-.man{
-   background-image: url(./img/man.svg);
-}
-
-.kids{
-    background-image: url(./img/kids.svg);
-}
-
-.accesories{
-    padding-top: 30px;
+.text{
+    position: absolute;
 }
 
 .long{
-    width: 1140px;
-    height: 180px;
-    height: 180px;
-    background-image: url(./img/long.svg);
-    background-color: rgba(33, 22, 22, 0.70);
-    background-blend-mode: overlay;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    grid-column: 1 / -1;
 }
 
 .long img{
@@ -218,7 +214,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1140px;
 }
 
 .heading_1 h1{
@@ -241,17 +236,18 @@ a {
 
 .line_1{
     padding-top: 48px;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
     gap: 30px;
 }
 
 .block{    
-    width: 360px;
+    
 }
 
-.block_img{
-    width: 360px;
-    height: 420px;
+.block_img img{
+    width: 100%;
 }
 
 .block_text{
@@ -293,12 +289,6 @@ a {
     line-height: normal;
 }
 
-.line_2{
-    padding-top: 30px;
-    display: flex;
-    gap: 30px;
-}
-
 .button_panel{
     padding-top: 48px;
     padding-bottom: 60px;
@@ -322,3 +312,62 @@ a {
 
     padding: 15px 39px;
 }
+
+
+@media ((width < 1200px)) {
+    .center{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media ((width>768px) and (width<=1024px)) {    
+    .menu{
+        height: 61px;
+    }
+
+    .label h1{
+        font-size: 34px;
+    }
+
+    .label .black{
+        font-size: 22px;
+    }
+
+    .label .red{
+        font-size: 22px;
+    }
+
+    .center{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .label h1{
+        font-size: 34px;
+    }
+
+    .label .black{
+        font-size: 22px;
+    }
+
+    .label .red{
+        font-size: 22px;
+    }
+
+    .line_1{
+        padding-top: 72px;
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 16px;
+    }
+
+    .center{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+};
